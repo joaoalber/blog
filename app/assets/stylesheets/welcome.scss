@@ -1,3 +1,50 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+@keyframes fadeIn { 
+  from { opacity: 0; } 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Mukta', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.welcome {
+  width: 100vw;
+  height: 100vh;
+  background-image: image-url("sky.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.image {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+}
+
+.linktree {
+  display: flex;
+  top: 60%;
+  justify-content: space-between;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 500px;
+}
+
+.icon {
+  animation: fadeIn 2s infinite alternate;
+}
